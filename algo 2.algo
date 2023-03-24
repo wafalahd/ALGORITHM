@@ -1,0 +1,15 @@
+PROCEDURE insertionSort(A:ARRAY_OF INTEGER)
+VAR
+    i: INTEGER
+    j: INTEGER
+BEGIN
+    FOR i:=1 TO lenght(A) DO
+    J:=A[i]
+    i:=i
+    WHILE i>0 and A[i-1]>j DO
+    A[i]:= A[i-1]
+    i:= i-1 
+    END WHILE 
+    A[i]:= j 
+    END FOR
+    END

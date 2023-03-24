@@ -1,0 +1,28 @@
+FUNCTION dot_product(v1,v2: ARRAY_OF FLOAT;n:INTEGER) :FLOAT
+VAR
+    ps: FLOAT
+    i: INTEGER
+BEGIN
+    ps := 0
+    FOR i FROM 0 TO n-1 DO 
+    ps:= ps +v1[i]*v2[i]
+    END FOR
+    RETURN ps ;
+
+END
+ALGORITHM algorithm_name
+VAR
+    n: INTEGER
+    v1,v2: FLOAT
+    FUNCTION dot_product
+    PROCEDURE read(t : ARRAY_OF FLOAT, n)
+    BEGIN
+        write("give n")
+        read (n)
+        read (v1,n)
+        read (v2,n)
+        if dot_product(v1,v2,n):=0
+        THEN write ("orthogonal")
+        else write ("not orthogonal")
+    END if
+END
